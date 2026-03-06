@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:5000"
+export const BASE_URL = "https://rb-mern-stack.onrender.com"
 
 // Routes Used
 export const API_PATHS = {
