@@ -1,4 +1,5 @@
-export const BASE_URL = "https://rb-mern-stack.onrender.com"
+export const BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "https://rb-mern-stack.onrender.com";
 
 // Routes Used
 export const API_PATHS = {
@@ -18,8 +19,7 @@ export const API_PATHS = {
         UPLOAD_IMAGES: (id) => `/api/resume/${id}/upload-images`
     },
 
-    IMAGE: {   // FIXED: consistent naming
-        // eslint-disable-next-line no-unused-vars
+    IMAGE: {
         UPLOAD_IMAGES: `/api/auth/upload-images`
     }
 }

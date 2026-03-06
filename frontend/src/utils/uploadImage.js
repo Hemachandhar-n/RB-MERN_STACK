@@ -6,7 +6,7 @@ const uploadImage = async (imageFile) => {
     formData.append('image', imageFile);
 
     try {
-        const response = await axiosInstance.post(API_PATHS.image.UPLOAD_IMAGE, formData, {
+        const response = await axiosInstance.post(API_PATHS.IMAGE.UPLOAD_IMAGES, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
@@ -19,6 +19,3 @@ const uploadImage = async (imageFile) => {
 };
 
 export default uploadImage;
-
-
-// it will help the upload the images and also upLoad off the images . its helper function also it wil downaloading
