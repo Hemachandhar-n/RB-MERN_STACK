@@ -38,7 +38,7 @@ app.use(
   express.static(path.join(__dirname, "uploads"), {
     setHeaders: (res) => {
       // Removed the trailing slash after 5173
-      res.set("Access-Control-Allow-Origin", "http://localhost:5173");
+      res.set("Access-Control-Allow-Origin", "https://resumemachines.vercel.app/");
     },
   })
 );
